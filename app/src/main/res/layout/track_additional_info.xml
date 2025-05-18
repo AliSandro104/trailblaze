@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/track_additional_info_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heure début"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/track_additional_info_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heure fin"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/track_additional_info_steps_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pas"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/track_additional_info_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitesse" />
+
+    <TextView
+        android:id="@+id/track_additional_info_acceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accélération" />
+
+    <TextView
+        android:id="@+id/track_additional_info_weather_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Météo" />
+
+    <TextView
+        android:id="@+id/track_additional_info_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Température" />
+
+    <TextView
+        android:id="@+id/track_additional_info_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidité" />
+
+    <TextView
+        android:id="@+id/track_additional_info_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vent" />
+</LinearLayout>

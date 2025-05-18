@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Bouton pour afficher la page montrant l'historique des parcours (page par défaut) -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accueil"
+            android:icon="@drawable/ic_accueil_24dp"
+            android:title="@string/menu_accueil" />
+    </group>
+
+    <!-- Bouton pour afficher la page permettant de débuter un parcours -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_debuter_parcours"
+            android:icon="@drawable/ic_menu_debuter_parcours"
+            android:title="@string/menu_debuter_parcours" />
+    </group>
+
+    <!-- Bouton de déconnexion - renvoie à la page de connexion et efface les données de session -->
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Se déconnecter"
+        android:orderInCategory="100" />
+</menu>

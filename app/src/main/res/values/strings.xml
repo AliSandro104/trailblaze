@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TrailBlaze</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">John Doe</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_accueil">Historique des parcours</string>
+    <string name="menu_debuter_parcours">Débuter un parcours</string>
+
+    <string name="splash_screen_app_title">Géotraceur</string>
+    <string name="splash_screen_names">Une création de:\n\nAndy Chen\nAli Hazime\nLouis Lalonde\nLucy Nguyen</string>
+    <string-array name="gender_options">
+        <item>--- Genre ---</item>
+        <item>Homme</item>
+        <item>Femme</item>
+        <item>Autre</item>
+        <item>Ne préfère pas dire</item>
+    </string-array>
+</resources>

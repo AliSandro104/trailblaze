@@ -1,0 +1,32 @@
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFD700</color>
+    <color name="blue">#0b57d0</color>
+
+    <!-- Splash screen background   -->
+    <color name="background_color">#FFFFFF</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="accent_color">#FF5722</color>
+
+    <!-- Define colorPrimary -->
+    <color name="colorPrimary">#FF6200EE</color> <!-- Using purple_500 -->
+
+    <color name="success_green">#4CAF50</color>
+    <color name="error_red">#F44336</color>
+    <color name="red">#FF0000</color>
+    <color name="warning_background">#FF9800</color>
+
+    <color name="deep_orange_500">#FF5722</color>
+    <color name="deep_orange_700">#E64A19</color>
+    <color name="coral_200">#FF7F50</color>
+    <color name="coral_700">#FF6347</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="dark_grey">#252525</color>
+</resources>

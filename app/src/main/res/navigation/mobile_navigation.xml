@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_accueil">
+
+    <fragment
+        android:id="@+id/nav_accueil"
+        android:name="com.example.inf8405tf.ui.fragment.HistoriqueParcoursFragment"
+        android:label="@string/menu_accueil"
+        tools:layout="@layout/fragment_historique_parcours">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_debuter_parcours"
+        android:name="com.example.inf8405tf.ui.fragment.DebuterParcoursFragment"
+        android:label="@string/menu_debuter_parcours"
+        tools:layout="@layout/fragment_enregistrer_parcours">
+    </fragment>
+</navigation>

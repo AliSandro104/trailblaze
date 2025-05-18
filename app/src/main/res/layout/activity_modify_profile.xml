@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Photo de profil avec un placeholder par défaut -->
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile_placeholder"
+            android:background="@android:color/darker_gray" />
+
+        <!-- Bouton pour sélectionner une image -->
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sélectionner une image"
+            android:backgroundTint="@color/purple_500"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Input username -->
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom d'utilisateur"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp" />
+
+        <!-- Input email -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="8dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp" />
+
+        <!-- Dropdown pour le genre -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dropdown_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp">
+
+            <Spinner
+                android:id="@+id/spinnerNewGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/white" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!-- Section pour le mot de passe (qui est optionnel) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modification du mot de passe (optionnel)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="25dp"
+            android:visibility="visible"/>
+
+        <!-- Nouveau mot de passe -->
+        <EditText
+            android:id="@+id/editNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nouveau mot de passe"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp" />
+
+        <!-- Mot de passe actuel -->
+        <EditText
+            android:id="@+id/editCurrentPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe actuel"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp" />
+
+        <!-- Bouton enregistrer -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:textSize="18sp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <!-- Bouton annuler -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

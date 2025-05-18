@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/enregistrer_parcours_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    app:behavior_hideable="false"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/enregistrer_parcours_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_sheet_peek_height"
+        android:background="@color/deep_orange_500"
+        android:padding="4dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/enregistrer_parcours_fab_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Enregistrer parcours"
+            app:backgroundTint="@color/white"
+            app:elevation="2dp"
+            app:fabCustomSize="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="38dp"
+            app:srcCompat="@drawable/baseline_play_circle_24"
+            app:tint="?attr/colorPrimary" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/stop_enregistrer_parcours_fab_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Stop enregistrer parcours"
+            android:visibility="gone"
+            app:backgroundTint="@color/white"
+            app:elevation="2dp"
+            app:fabCustomSize="52dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxImageSize="38dp"
+            app:srcCompat="@drawable/baseline_pause_circle_24"
+            app:tint="?attr/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/resumer_terminer_enregistrer_parcours_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <!-- Contained Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resumer_enregistrer_parcours_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Résumer"
+                android:gravity="center"
+                android:textColor="@color/deep_orange_500"
+                app:backgroundTint="@color/white"
+                app:elevation="2dp" />
+
+            <!-- Espace entre les boutons -->
+            <Space
+                android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+            <!-- Text Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/terminer_enregistrer_parcours_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terminer"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="0dp"
+                style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
